@@ -3,40 +3,153 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <title>
         Hugo Sciascia
     </title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="user/css/style.css">
+
+
 
 </head>
 
-<body class="bg-secondary" data-spy="scroll" data-target="#leftNav" data-offset="300">
-    <header class="navbar navbar-expand navbar-dark bg-dark flex-column flex-md-row bd-navbar sticky-top">
-        <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+<body data-spy="scroll" data-target="#topNav" data-offset="400">
+    <header class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a href="https://hugosciascia.github.io/">
             <img class="bd-placeholder-img" width="36" height="36" src="favicon.png" />
-            <title>Hugo Sciascia</title>
-            </svg>
         </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
+            <nav id="topNav" class="navbar-nav nav-pills ml-auto">
+                <a class="nav-link" href="#about">A propos</a>
+                <a class="nav-link" href="#projects">Projets</a>
+                <a class="nav-link" href="#cv">CV</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
 
+        </div>
     </header>
-    <div class="container-fluid pt-3 pb-3">
-        <div class="row">
-            <div class="col-sm-2 text-center position-fixed d-none  d-sm-block">
-                <h2 class="text-light">
-                    Hugo Sciascia
-                </h2>
-                <img src="images/pdp.png" class="img-fluid rounded-circle p-1" />
-            </div>
-            <div class="col-sm-10 ml-sm-auto">
-                <div class="jumbotron">
-                    <h1 class="display-4">
-                        Pour en savoir davantage sur moi... 
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div id="about" class="jumbotron vh-100" style="padding-top:5%">
+                    <div class="container">
+                        <!-- <h1 class="display-3">Bienvenue !</h1> -->
+                        <!-- <p>This is a template for a simple marketing or informational website. It includes a large
+                            callout called a jumbotron and three supporting pieces of content. Use it as a starting
+                            point to create something more unique.</p> -->
+                    </div>
+                    <img src="images/pdp.png" class="img-thumbnail rounded-circle p-1 w-25 mx-auto d-block" />
+
+                    <div class="text-center d-none d-block">
+                        <h2 class="display-3">
+                            Hugo Sciascia
+                        </h2>
+                    </div>
+                    <h1 class="text-center lead">
+                        Élève-Ingénieur en Systèmes Numériques à l'ENSSAT (Lannion - UnivRennes1).
                     </h1>
-                    <p class="lead">
-                        Vous pouvez me contacter ou obtenir des informations complémentaires en cliquant sur les icônes suivantes :
-                    </p>
+                    <a class="mx-auto d-flex" href="#projects"><span
+                            class="fa fa-arrow-down fa-3x mx-auto d-block"></span></a>
+                </div>
+
+                <div id="projects" class="container sections">
+                    <h1 class="display-3">Projets</h1>
+
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/enssatraidaventure.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">ENSSAT Raid Aventure 2020</h5>
+                                    <p class="card-text">Raid sportif à réaliser en binôme composée de Kayak, Trail et
+                                        VTT. 248 participants attendus pour un budget total estimé à 20 000€.</p>
+                                    <a href="https://raidaventure.projets-sh.enssat.fr/"
+                                        class="btn btn-outline-dark">Visitez le site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/liguecancer64.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">ENSSAT Raid Aventure 2020</h5>
+                                    <p class="card-text">Raid sportif à réaliser en binôme composée de Kayak, Trail et
+                                        VTT. 248 participants attendus pour un budget total estimé à 20 000€.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" style="filter: blur(3px);" src="images/pdp.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">En cours de construction</h5>
+                                    <p class="card-text">En cours de construction</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    <a class="mx-auto d-flex" href="#cv"><span
+                            class="fa fa-arrow-down fa-3x mx-auto d-block"></span></a>
+
+                </div> <!-- /container -->
+
+                <div id="cv" class="container sections">
+                    <h1 class="display-3">CV</h1>
+
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <h1 class="lead">
+                            <p>J'ai 22 ans et je suis étudiant en deuxième année du cursus <b>Systèmes Numériques</b> à
+                                l'<b>ENSSAT</b> (École Nationale Supérieure des Sciences Appliquées et de Technologie) à
+                                <b>Lannion</b> (Université de Rennes 1).</p>
+
+                            <p>Avant d'être passioné par les Systèmes Embarqués, j'ai obtenu un DUT en Informatique à
+                                l'IUT de Bayonne et du Pays Basque.
+                            </p>
+                            <p>Ces 2 années d'études m'ont permis de me rendre compte de mon fort attrait pour les
+                                systèmes embarqués, à travers des projets de microcontrôleurs.</p>
+                            <p>J'aimerais aujourd'hui développer mes connaissances en programmation temps-réel.</p>
+                        </h1>
+
+                        <a href="docs/CV_Hugo_Sciascia.pdf" class="btn btn-outline-dark">Télécharger mon CV <span
+                                class="fa fa-file-download"></span></a>
+
+                    </div>
+
+                    <hr>
+                    <a class="mx-auto d-flex" href="#contact"><span
+                            class="fa fa-arrow-down fa-3x mx-auto d-block"></span></a>
+                </div> <!-- /container -->
+
+                <div id="contact" class="container sections">
+                    <h1 class="display-3">Contactez-moi</h1>
+
+                    <!-- Example row of columns -->
+                    <h1 class="lead">
+
+                        Quelques liens utiles, pour en savoir plus sur
+                        <span class="typer" id="some-id"
+                            data-words="moi.,mes études.,mes projets.,mes compétences.,mes motivations."
+                            data-delay="100" data-deleteDelay="1000"></span>
+                        <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|"
+                            data-owner="some-id"></span>
+                    </h1>
                     <hr class="my-4" />
                     <ul class="nav nav-pills justify-content-center">
                         <a class="nav-item nav-link" href="https://github.com/hugosciascia">
@@ -46,8 +159,8 @@
                             <span class="fab fa-linkedin-in fa-3x"></span>
                         </a>
                         <!-- <a class="nav-item nav-link" href="https://www.viadeo.com/fr/profile/hugo.sciascia">
-                        <span class="fab fa-viadeo fa-3x"></span>
-                      </a> -->
+                                    <span class="fab fa-viadeo fa-3x"></span>
+                                  </a> -->
                         <a class="nav-item nav-link" href="tel:+33675086221">
                             <span class="fas fa-phone fa-3x"></span>
                         </a>
@@ -55,19 +168,18 @@
                             <span class="fas fa-envelope fa-3x"></span>
                         </a>
                     </ul>
-                </div>
+                    <hr>
+                </div> <!-- /container -->
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    </main>
+    <footer class="container">
+        <p>© Hugo Sciascia 2019-2020</p>
+    </footer>
+    <script src="user/js/jquery-3.4.1.slim.min.js""></script>
+    <script src=" user/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script async src="user/js/typer.js"></script>
 </body>
 
 </html>
