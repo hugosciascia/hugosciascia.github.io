@@ -39,6 +39,29 @@
     </header>
     <main role="main">
 
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le site est actuellement en construction, et par conséquent seulement disponible pour un
+                            affichage sur ordinateur. </p>
+                        <p>Merci d'avance pour votre compréhension.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -78,7 +101,7 @@
                                     </h5>
                                     <p class="card-text">Raid sportif à réaliser en binôme composée de Kayak, Trail et
                                         VTT. 248 participants attendus pour un budget total estimé à 20 000€.
-                                    L'épreuve aura lieu le dimanche 10 mai 2020</p>
+                                        L'épreuve aura lieu le dimanche 10 mai 2020</p>
                                     <a href="https://raidaventure.projets-sh.enssat.fr/"
                                         class="btn btn-outline-dark">Visitez le site</a>
                                 </div>
@@ -89,7 +112,8 @@
                                 <img class="card-img-top" src="images/liguecancer64.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Ligue Contre le Cancer – 64</h5>
-                                    <p class="card-text">Réalisation d’un intranet pour la gestion des Espaces Ligues.</p>
+                                    <p class="card-text">Réalisation d’un intranet pour la gestion des Espaces Ligues.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -183,6 +207,11 @@
     <script src=" user/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script async src="user/js/typer.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#staticBackdrop').modal('show');
+        });
+    </script>
 </body>
 
 </html>
